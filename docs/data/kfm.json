@@ -1,0 +1,17 @@
+{
+  "id": "kfm",
+  "name": "KFM",
+  "url": "https://www.radio-south-africa.co.za/kfm",
+  "now": "PART OF ME KATY PERRY LIVE",
+  "artist": "KATY PERRY",
+  "title": "PART OF ME",
+  "artwork": "https://static.mytuner.mobi/media/tvos_radios/042/kfm-radio.a1ba5112.jpg",
+  "links": {
+    "youtubeSearch": "https://www.youtube.com/results?search_query=KATY%20PERRY%20PART%20OF%20ME",
+    "spotifySearch": "https://open.spotify.com/search/KATY%20PERRY%20PART%20OF%20ME",
+    "appleMusicSearch": "https://music.apple.com/search?term=KATY%20PERRY%20PART%20OF%20ME",
+    "apple": "https://music.apple.com/us/album/part-of-me/716084282?i=716085475&uo=4",
+    "youtubeExact": "https://www.youtube.com/watch?v=uuwfgXD8qV8"
+  },
+  "scrapedAt": "2025-10-16T07:37:48.186Z"
+}

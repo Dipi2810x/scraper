@@ -1,0 +1,16 @@
+{
+  "name": "radio-now-playing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scrape radio-south-africa station pages and publish now-playing data to GitHub Pages",
+  "main": "scripts/scrape.js",
+  "scripts": {
+    "scrape": "node scripts/scrape.js",
+    "start": "npx http-server docs -p 8080"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^2.6.7",
+    "puppeteer": "^21.0.0"
+  }
+}

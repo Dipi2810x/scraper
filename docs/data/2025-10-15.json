@@ -1,0 +1,16 @@
+{
+  "date": "2025-10-15",
+  "items": [
+    {
+      "stationId": "kfm",
+      "stationName": "KFM",
+      "now": "Listen to KFM 94.5 live. The best South African radio stations. Listen to online radio at radio-south-africa.co.za.",
+      "links": {
+        "youtube": "https://www.youtube.com/results?search_query=Listen%20to%20KFM%2094.5%20live.%20The%20best%20South%20African%20radio%20stations.%20Listen%20to%20online%20radio%20at%20radio-south-africa.co.za.",
+        "spotify": "https://open.spotify.com/search/Listen%20to%20KFM%2094.5%20live.%20The%20best%20South%20African%20radio%20stations.%20Listen%20to%20online%20radio%20at%20radio-south-africa.co.za.",
+        "applemusic": "https://music.apple.com/search?term=Listen%20to%20KFM%2094.5%20live.%20The%20best%20South%20African%20radio%20stations.%20Listen%20to%20online%20radio%20at%20radio-south-africa.co.za."
+      },
+      "firstSeen": "2025-10-15T10:44:14.427Z"
+    }
+  ]
+}

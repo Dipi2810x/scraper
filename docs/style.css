@@ -1,0 +1,16 @@
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:1rem;background:#f7f7fb;color:#111}
+main{max-width:980px;margin:0 auto}
+h1{font-size:1.6rem}
+label,select{display:inline-block}
+
+#nowInfo{background:white;padding:1rem;border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,0.06)}
+#nowCard{background:white;padding:12px;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,0.06)}
+#links a{margin-right:8px;padding:6px 10px;background:#111;color:#fff;border-radius:6px;text-decoration:none}
+
+#todayList{list-style:none;padding:0;margin-top:8px}
+#todayList li{background:white;margin:0.6rem 0;padding:0.6rem;border-radius:8px;display:flex;align-items:center;gap:12px}
+#todayList img{width:56px;height:56px;object-fit:cover;border-radius:6px}
+
+.muted{color:#666}
+.small{font-size:0.9rem;color:#666}
+.btn{display:inline-block;padding:6px 10px;background:#111;color:#fff;border-radius:6px;text-decoration:none}

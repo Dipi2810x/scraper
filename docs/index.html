@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Radio Now Playing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+      <h1 style="margin:0">Radio Now Playing</h1>
+      <div>
+        <label for="station" style="display:inline-block;margin-right:8px">Station</label>
+        <select id="station" style="min-width:160px"></select>
+        <button id="refreshBtn" style="margin-left:8px;padding:6px 10px;">Refresh</button>
+        <label style="margin-left:12px;font-size:0.9rem;color:#555"><input id="autoRefresh" type="checkbox"/> Auto-refresh</label>
+      </div>
+    </header>
+
+    <section id="now">
+      <h2>Now</h2>
+      <div id="nowCard" style="display:flex;gap:12px;align-items:center;">
+        <img id="artwork" src="" alt="album artwork" style="display:none;width:140px;height:140px;border-radius:8px;object-fit:cover;flex:0 0 140px"/>
+        <div style="flex:1">
+          <div id="nowInfo" style="margin-bottom:8px">Loading…</div>
+          <div id="links"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="today">
+      <h2>Songs Today</h2>
+      <ul id="todayList"></ul>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
