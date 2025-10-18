@@ -1,14 +1,11 @@
 {
   "date": "2025-10-18",
-  "stations": [
+  "items": [
     {
-      "id": "kfm",
-      "name": "KFM",
-      "url": "https://www.radio-south-africa.co.za/kfm",
-      "now": "SAPPHIRE ED SHEERAN LIVE",
+      "stationId": "kfm",
+      "stationName": "KFM",
       "artist": "ED SHEERAN",
       "title": "SAPPHIRE",
-      "artwork": "https://static.mytuner.mobi/media/tvos_radios/042/kfm-radio.a1ba5112.jpg",
       "links": {
         "youtubeSearch": "https://www.youtube.com/results?search_query=ED%20SHEERAN%20SAPPHIRE",
         "spotifySearch": "https://open.spotify.com/search/ED%20SHEERAN%20SAPPHIRE",
@@ -16,7 +13,8 @@
         "apple": "https://music.apple.com/us/album/sapphire/1811175532?i=1811175544&uo=4",
         "youtubeExact": "https://www.youtube.com/watch?v=JgDNFQ2RaLQ"
       },
-      "scrapedAt": "2025-10-18T11:15:57.925Z"
+      "artwork": "https://static.mytuner.mobi/media/tvos_radios/042/kfm-radio.a1ba5112.jpg",
+      "firstSeen": "2025-10-18T11:13:48.691Z"
     }
   ]
 }

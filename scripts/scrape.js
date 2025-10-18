@@ -145,10 +145,25 @@ async function scrapeKFM(browser) {
 // ---------- Main Runner ----------
 
 async function run() {
-  const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    headless: true,
-  });
+  console.log('node', process.version);
+  try {
+    console.log('puppeteer', puppeteer.product || puppeteer.version || 'unknown');
+  } catch (e) {
+    console.log('puppeteer version unknown');
+  }
+
+  let browser = null;
+  try {
+    browser = await puppeteer.launch({
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      headless: 'new',
+    });
+  } catch (err) {
+    console.error('Puppeteer failed to launch:', err && (err.stack || err.message || err));
+    console.error('If this is running on a Linux runner, ensure required apt packages are installed.');
+    console.error('See https://pptr.dev/troubleshooting for common fixes.');
+    process.exit(2);
+  }
 
   try {
     const results = [];
