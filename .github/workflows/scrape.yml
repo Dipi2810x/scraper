@@ -2,7 +2,6 @@ name: Scrape radio and publish data
 
 on:
   schedule:
-    # every 5 minutes
     - cron: '*/5 * * * *'
   workflow_dispatch: {}
 
@@ -12,6 +11,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,14 +24,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install apt packages for Puppeteer
+      - name: Ensure Puppeteer dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y ca-certificates fonts-liberation libnss3 libxss1 libasound2 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdbus-1-3 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2 libgbm1 wget
+          sudo apt-get install -y \
+            ca-certificates fonts-liberation libnss3 libxss1 libasound2 \
+            libatk1.0-0 libatk-bridge2.0-0 libcups2 libdbus-1-3 libx11-xcb1 \
+            libxcomposite1 libxdamage1 libxrandr2 libgbm1 wget \
+            libpango1.0-0 libgtk-3-0
+
+      - name: Ensure output directory exists
+        run: mkdir -p docs/data
 
       - name: Run scraper (capture logs)
         run: |
-          set -o pipefail || true
+          set -o pipefail
           npm run scrape > scrape.log 2>&1 || (echo "npm run scrape failed, see scrape.log"; cat scrape.log; exit 1)
 
       - name: Upload scrape log
