@@ -5,8 +5,7 @@
   "description": "Scrape radio-south-africa station pages and publish now-playing data to GitHub Pages",
   "main": "scripts/scrape.js",
   "scripts": {
-    "scrape": "node scripts/scrape.js",
-    
+    "scrape": "node scripts/scrape.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
